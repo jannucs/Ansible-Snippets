@@ -1,0 +1,9 @@
+cat site.yml
+ansible-playbook -i myhosts site.yml
+--- denotes the beginning of a YAML file
+hosts: host tells Ansible to run the tasks on the host host
+become: true makes all your tasks run as sudo
+- name: is basically a comment, describing what the task does
+apt: specifies the module we want to use
+name: is an argument to the apt module, that specifies the name of the package to install.
+ansible-doc apt

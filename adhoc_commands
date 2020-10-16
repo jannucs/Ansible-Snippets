@@ -1,0 +1,1 @@
+ansible group1 -i myhosts -m command -a date
